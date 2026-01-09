@@ -1,0 +1,27 @@
+<h2>Issued Book History</h2>
+
+<table border="1">
+<tr>
+  <th>Transaction ID</th>
+  <th>Book Name</th>
+  <th>Author</th>
+  <th>Issue Date</th>
+  <th>Return Date</th>
+  <th>Actual Return</th>
+  <th>Fine</th>
+</tr>
+
+<% issuedTransactions.forEach(t => { %>
+<tr>
+  <td><%= t._id %></td>
+  <td><%= t.bookId.title %></td>
+  <td><%= t.bookId.author %></td>
+  <td><%= t.issueDate.toDateString() %></td>
+  <td><%= t.returnDate.toDateString() %></td>
+  <td><%= t.actualReturnDate ? t.actualReturnDate.toDateString() : 'Not Returned' %></td>
+  <td>₹ <%= t.fine %></td>
+</tr>
+<% }) %>
+</table>
+
+<a href="/transactions/availability">Back to Availability</a>

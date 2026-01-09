@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Memberships</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <div class="table-card">
+    <h2 class="form-title">Memberships</h2>
+
+    <div class="table-responsive">
+      <table class="table table-bordered table-hover align-middle">
+        <thead class="table-light">
+          <tr>
+            <th>Member Name</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <% memberships.forEach(m => { %>
+          <tr>
+            <td><%= m.memberName %></td>
+            <td>
+              <span class="status-badge <%= m.status === 'Active' ? 'active' : 'inactive' %>">
+                <%= m.status %>
+              </span>
+            </td>
+          </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+
+    <a href="/reports" class="back-link">← Back to Reports</a>
+  </div>
+
+</body>
+</html>

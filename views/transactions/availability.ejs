@@ -1,0 +1,43 @@
+<h2>Book Availability</h2>
+
+<table border="1">
+<tr>
+  <th>Name</th>
+  <th>Author</th>
+  <th>Status</th>
+  <th>Select</th>
+</tr>
+
+<form method="POST" action="/transactions/issue">
+<% books.forEach(b => { %>
+<tr>
+  <td><%= b.title %></td>
+  <td><%= b.author %></td>
+  <td><%= b.status %></td>
+  <td>
+    <% if (b.status === 'Available') { %>
+      <input type="radio" name="bookId" value="<%= b._id %>" required>
+    <% } %>
+  </td>
+</tr>
+<% }) %>
+</table>
+
+<br>
+<button>Issue Book</button>
+<br>
+</form>
+
+<br><br>
+
+<a href="/transactions/return">Return Book</a> 
+<br>
+<br>
+
+<a href="/transactions/availability">Refresh Availability</a>
+<br>
+
+<br>
+
+
+<a href="/logout">Logout</a>

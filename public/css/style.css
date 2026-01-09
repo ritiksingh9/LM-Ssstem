@@ -1,0 +1,386 @@
+/* ===== BODY ===== */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== LOGIN CARD ===== */
+.login-card {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+}
+
+/* LOGIN HEADER */
+.login-card h1 {
+    color: #0d6efd;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* FORM ELEMENTS */
+.form-control {
+    border-radius: 8px;
+    padding: 10px 12px;
+    border: 1px solid #ced4da;
+    transition: all 0.2s;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 5px rgba(13, 110, 253, 0.5);
+    border-color: #0d6efd;
+}
+
+/* BUTTONS */
+.btn-primary {
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+}
+
+/* FOOTER TEXT */
+.footer-text {
+    font-size: 0.85rem;
+    color: #6c757d;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* ===== TABLES ===== */
+.table-custom {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table-custom th, .table-custom td {
+    border: 1px solid #dee2e6;
+    padding: 10px;
+    text-align: left;
+}
+
+.table-custom th {
+    background-color: #0d6efd;
+    color: #fff;
+    font-weight: 600;
+}
+
+.table-custom tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* ACTION BUTTONS IN TABLE */
+.btn-table {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-issue {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.btn-issue:hover {
+    background-color: #0b5ed7;
+}
+
+.btn-return {
+    background-color: #198754;
+    color: white;
+}
+
+.btn-return:hover {
+    background-color: #157347;
+}
+
+.btn-history {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-history:hover {
+    background-color: #5c636a;
+}
+
+/* ===== ALERT MESSAGES ===== */
+.alert-success {
+    background-color: #d1e7dd;
+    color: #0f5132;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    border: 1px solid #badbcc;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #842029;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    border: 1px solid #f5c2c7;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 576px) {
+    .login-card {
+        margin: 30px 15px;
+        padding: 20px;
+    }
+
+    .table-custom th, .table-custom td {
+        padding: 8px;
+    }
+}
+
+
+/* Dashboard CSS */
+
+/* ===== LOGIN-CARD STYLE USED FOR DASHBOARD ===== */
+.login-card {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+}
+
+/* Dashboard Buttons */
+.login-card .btn {
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+
+.login-card .btn-primary {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.login-card .btn-primary:hover {
+    background-color: #0b5ed7;
+}
+
+.login-card .btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.login-card .btn-danger:hover {
+    background-color: #b02a37;
+}
+
+/* Footer Text */
+.footer-text {
+    font-size: 0.85rem;
+    color: #6c757d;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .login-card {
+        margin: 30px 15px;
+        padding: 20px;
+    }
+
+    .login-card .btn {
+        font-size: 0.95rem;
+        padding: 8px;
+    }
+}
+
+
+/* ===== GLOBAL ===== */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eef2f7, #f9fbfd);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== DASHBOARD CARD ===== */
+.dashboard-card {
+  background: #ffffff;
+  padding: 30px 35px;
+  width: 360px;
+  border-radius: 14px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+/* ===== TITLE ===== */
+.dashboard-title {
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* ===== BUTTON CONTAINER ===== */
+.dashboard-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* ===== BUTTON STYLE ===== */
+.dashboard-buttons .btn {
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+/* Light button hover */
+.dashboard-buttons .btn-light:hover {
+  background-color: #e9ecef;
+}
+
+/* Logout button */
+.dashboard-buttons .btn-outline-danger {
+  margin-top: 10px;
+}
+.dashboard-buttons .btn-outline-danger:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+
+
+/* ===== FORM CARD (Login style) ===== */
+.form-card {
+  background: #ffffff;
+  padding: 30px 35px;
+  width: 360px;
+  border-radius: 14px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+/* ===== FORM TITLE ===== */
+.form-title {
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* ===== FORM GROUP ===== */
+.form-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #34495e;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* ===== BACK LINK ===== */
+.back-link {
+  display: block;
+  margin-top: 18px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #0d6efd;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+
+
+/* ===== TABLE CARD ===== */
+.table-card {
+  background: #ffffff;
+  padding: 25px;
+  width: 95%;
+  max-width: 900px;
+  border-radius: 14px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  margin: auto;
+}
+
+/* ===== SECTION TITLE ===== */
+.section-title {
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* ===== TABLE WRAPPER ===== */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+/* ===== TABLE ===== */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.styled-table thead {
+  background-color: #f5f7fa;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eaecef;
+}
+
+.styled-table th {
+  font-weight: 600;
+  color: #34495e;
+}
+
+/* ===== ROW HOVER ===== */
+.styled-table tbody tr:hover {
+  background-color: #f9fbfd;
+}
+
+/* ===== TRANSACTION ID ===== */
+.tx-id {
+  font-size: 12px;
+  color: #6c757d;
+  word-break: break-word;
+}
+
+/* ===== FINE COLORS ===== */
+.fine {
+  color: #c62828;
+  font-weight: 600;
+}
+
+.no-fine {
+  color: #2e7d32;
+  font-weight: 600;
+}

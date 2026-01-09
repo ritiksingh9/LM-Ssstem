@@ -1,0 +1,13 @@
+<h2>Fine Payment</h2>
+
+<p>Fine Amount: ₹ <%= fine %></p>
+
+<form method="POST" action="/transactions/confirm-fine">
+  <% if (fine > 0) { %>
+    <input type="checkbox" name="finePaid" required> Fine Paid
+  <% } %>
+  <br><br>
+  <button>Confirm Payment</button>
+</form>
+
+<a href="/transactions/availability">Back to Availability</a>

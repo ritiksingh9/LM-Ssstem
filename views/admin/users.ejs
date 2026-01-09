@@ -1,0 +1,23 @@
+<h2>User Management</h2>
+
+<table border="1">
+<tr>
+  <th>Username</th>
+  <th>Status</th>
+  <th>Action</th>
+</tr>
+
+<% users.forEach(u => { %>
+<tr>
+  <td><%= u.username %></td>
+  <td><%= u.isActive ? 'Active' : 'Inactive' %></td>
+  <td>
+    <form method="POST" action="/admin/toggle-user/<%= u._id %>">
+      <button>Toggle</button>
+    </form>
+  </td>
+</tr>
+<% }) %>
+</table>
+
+<a href="/admin/dashboard">Back</a>
